@@ -1,0 +1,17 @@
+{
+  "name": "maxi-web-components-showcase",
+  "version": "1.0.0",
+  "description": "Showcase de componentes Maxi Web Components",
+  "main": "index.html",
+  "scripts": {
+    "build": "node build.js",
+    "dev": "npx http-server . -p 3000 -o",
+    "deploy": "npm run build && echo 'Build completado. Usa la carpeta dist para deployar.'"
+  },
+  "dependencies": {
+    "maxi-web-components": "^4.0.10"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  }
+}

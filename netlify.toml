@@ -1,0 +1,16 @@
+[build]
+  # Directorio que se publicará
+  publish = "dist"
+  
+  # Comando de build
+  command = "npm run build"
+
+[build.environment]
+  # Versión de Node.js
+  NODE_VERSION = "18"
+
+# Configuración de redirecciones (opcional)
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

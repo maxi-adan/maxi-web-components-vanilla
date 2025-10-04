@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maxi Web Components</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/maxi-web-components/dist/global.css"
+    />
+
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="icon" href="./assets/vanilla.svg" />
+    <script
+      type="module"
+      src="node_modules/maxi-web-components/dist/maxi-web-components/maxi-web-components.esm.js"
+      defer
+    ></script>
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-content">
+        <div class="logo-section">
+          <img src="./assets/logo.png" alt="Maxi Web Components" class="logo" />
+          <div class="header-text">
+            <h1>Maxi Web Components</h1>
+            <p>Web Components Library</p>
+          </div>
+        </div>
+        <div class="vanilla-info">
+          <div class="vanilla-logo">
+            <img
+              src="./assets/vanilla.svg"
+              alt="vanilla Logo"
+              class="vanilla-logo-img"
+            />
+          </div>
+          <div class="vanilla-text">
+            <span class="vanilla-version">Vanilla JS</span>
+            <span class="compatibility-text">Compatible</span>
+          </div>
+        </div>
+      </div>
+      <div class="header-description">
+        <p>
+          These components are designed to work seamlessly with Web Components,
+          providing a comprehensive set of UI elements for modern web
+          development.
+        </p>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <section id="inputs" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Input Components</h2>
+            </div>
+            <div id="inputs-grid" class="components-grid"></div>
+          </div>
+        </section>
+
+        <section id="navigation" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Navigation Components</h2>
+            </div>
+            <div id="navigation-grid" class="components-grid"></div>
+          </div>
+        </section>
+
+        <section id="paginator" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Paginator</h2>
+              <p class="section-description">Paginator for data pagination</p>
+            </div>
+            <div id="paginator-grid" class="components-grid"></div>
+          </div>
+        </section>
+
+        <section id="actions" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Action Components</h2>
+            </div>
+            <div id="actions-grid" class="components-grid"></div>
+          </div>
+        </section>
+
+        <section id="display" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Display Components</h2>
+              <p class="section-description"></p>
+            </div>
+            <div id="display-grid" class="components-grid"></div>
+          </div>
+        </section>
+
+        <section id="data" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Data Table</h2>
+              <p class="section-description">
+                Advanced table with sorting, filtering, and pagination
+              </p>
+            </div>
+            <div id="data-grid" class="components-grid"></div>
+          </div>
+        </section>
+
+        <section id="feedback" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">Feedback Components</h2>
+              <p class="section-description"></p>
+            </div>
+            <div id="feedback-grid" class="components-grid"></div>
+          </div>
+        </section>
+
+        <section id="state" class="section">
+          <div class="section-card">
+            <div class="section-header">
+              <h2 class="section-title">State Components</h2>
+              <p class="section-description"></p>
+            </div>
+            <div id="state-grid" class="components-grid"></div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <!-- <div class="container">
+        <p>&copy; 2025 Maxi Web Components. Todos los derechos reservados.</p>
+      </div> -->
+    </footer>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
