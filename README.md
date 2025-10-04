@@ -1,6 +1,5 @@
 # 🚀 Maxi Web Components - Vanilla JS Showcase
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-badge-id/deploy-status)](https://app.netlify.com/sites/your-site-name/deploys)
 
 A complete demonstration application showcasing all components from the **Maxi Web Components** library working with **pure Vanilla JavaScript**, no frameworks required.
 
