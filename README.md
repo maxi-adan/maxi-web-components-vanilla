@@ -516,9 +516,8 @@ Contributions are welcome. Please:
 
 **Maxi Web Components Team**
 
-- 🌐 Website: [Your Website]
-- 📧 Email: [Your Email]
-- 💼 LinkedIn: [Your LinkedIn]
+- 🌐 Website: https://vocal-travesseiro-7c2cd5.netlify.app/
+- 📧 Email: ext.aasanchez@maxillc.com
 
 ---
 
