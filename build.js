@@ -1,6 +1,22 @@
 const fs = require("fs");
 const path = require("path");
 
+console.log("🔨 Iniciando build...\n");
+
+// Verificar que node_modules existe
+if (!fs.existsSync("node_modules")) {
+  console.error("❌ ERROR: node_modules no existe. Ejecuta 'npm install' primero.");
+  process.exit(1);
+}
+
+// Verificar que maxi-web-components existe
+if (!fs.existsSync("node_modules/maxi-web-components")) {
+  console.error("❌ ERROR: maxi-web-components no está instalado.");
+  process.exit(1);
+}
+
+console.log("✅ Dependencias verificadas\n");
+
 function copyDir(src, dest) {
   if (!fs.existsSync(dest)) {
     fs.mkdirSync(dest, { recursive: true });
@@ -20,9 +36,14 @@ function copyDir(src, dest) {
   }
 }
 
-if (!fs.existsSync("dist")) {
-  fs.mkdirSync("dist");
+// Limpiar dist si existe
+if (fs.existsSync("dist")) {
+  console.log("🗑️  Limpiando carpeta dist anterior...");
+  fs.rmSync("dist", { recursive: true, force: true });
 }
+
+console.log("📁 Creando carpeta dist...\n");
+fs.mkdirSync("dist");
 
 const filesToCopy = ["index.html", "styles", "js", "assets"];
 
@@ -42,41 +63,74 @@ filesToCopy.forEach((file) => {
   }
 });
 
-const maxiComponentsPath =
-  "node_modules/maxi-web-components/dist/maxi-web-components";
-const distMaxiPath =
-  "dist/node_modules/maxi-web-components/dist/maxi-web-components";
+// Copiar maxi-web-components a vendor/ en lugar de node_modules/ 
+// (Netlify ignora node_modules por defecto)
+const maxiDistPath = "node_modules/maxi-web-components/dist";
+const distVendorPath = "dist/vendor/maxi-web-components";
 
-if (fs.existsSync(maxiComponentsPath)) {
-  copyDir(maxiComponentsPath, distMaxiPath);
-  console.log("✅ Copiado: maxi-web-components JS");
-} else {
-  console.log("❌ No encontrado: maxi-web-components");
-}
-
-const globalCssPath = "node_modules/maxi-web-components/dist/global.css";
-const distGlobalCssPath =
-  "dist/node_modules/maxi-web-components/dist/global.css";
-
-if (fs.existsSync(globalCssPath)) {
-  const distDir = "dist/node_modules/maxi-web-components/dist";
-  if (!fs.existsSync(distDir)) {
-    fs.mkdirSync(distDir, { recursive: true });
+if (fs.existsSync(maxiDistPath)) {
+  // Copiar todo el contenido de dist/ a vendor/
+  copyDir(maxiDistPath, distVendorPath);
+  console.log("✅ Copiado: vendor/maxi-web-components");
+  
+  // Verificar que global.css fue copiado
+  const globalCssCheck = path.join(distVendorPath, "global.css");
+  if (fs.existsSync(globalCssCheck)) {
+    console.log("   ✓ global.css");
+  } else {
+    console.log("   ✗ global.css (NO ENCONTRADO)");
   }
-  fs.copyFileSync(globalCssPath, distGlobalCssPath);
-  console.log("✅ Copiado: global.css");
+  
+  // Verificar que maxi-web-components fue copiado
+  const maxiJsCheck = path.join(distVendorPath, "maxi-web-components");
+  if (fs.existsSync(maxiJsCheck)) {
+    console.log("   ✓ maxi-web-components/");
+  } else {
+    console.log("   ✗ maxi-web-components/ (NO ENCONTRADO)");
+  }
+  
+  // Verificar assets
+  const assetsCheck = path.join(distVendorPath, "assets");
+  if (fs.existsSync(assetsCheck)) {
+    console.log("   ✓ assets/");
+  } else {
+    console.log("   ℹ assets/ (no existe en source)");
+  }
 } else {
-  console.log("❌ No encontrado: global.css");
-}
-
-const maxiAssetsPath = "node_modules/maxi-web-components/dist/assets";
-const distAssetsPath = "dist/assets";
-
-if (fs.existsSync(maxiAssetsPath)) {
-  copyDir(maxiAssetsPath, distAssetsPath);
-  console.log("✅ Copiado: assets/fonts");
-} else {
-  console.log("ℹ️ No se encontraron assets locales");
+  console.log("❌ No encontrado: node_modules/maxi-web-components/dist");
 }
 
 console.log('\n🚀 Build completado! Usa la carpeta "dist" para deployar.');
+
+// Verificar estructura completa de dist/
+console.log('\n📂 Estructura completa de dist/:');
+function listDir(dir, indent = '') {
+  if (!fs.existsSync(dir)) return;
+  const items = fs.readdirSync(dir, { withFileTypes: true });
+  items.forEach(item => {
+    if (item.isDirectory()) {
+      console.log(`${indent}📁 ${item.name}/`);
+      // Solo listar subdirectorios importantes, no recursivo completo
+      if (item.name === 'node_modules' || item.name === 'maxi-web-components' || item.name === 'dist') {
+        listDir(path.join(dir, item.name), indent + '  ');
+      }
+    } else {
+      console.log(`${indent}📄 ${item.name}`);
+    }
+  });
+}
+listDir('dist');
+
+console.log('\n📊 Tamaño de archivos críticos:');
+const criticalFiles = [
+  'dist/vendor/maxi-web-components/global.css',
+  'dist/vendor/maxi-web-components/maxi-web-components/maxi-web-components.esm.js'
+];
+criticalFiles.forEach(file => {
+  if (fs.existsSync(file)) {
+    const stats = fs.statSync(file);
+    console.log(`   ✓ ${file} (${stats.size} bytes)`);
+  } else {
+    console.log(`   ✗ ${file} (NO EXISTE)`);
+  }
+});

@@ -2,8 +2,8 @@
   # Directorio que se publicará
   publish = "dist"
   
-  # Comando de build
-  command = "npm run build"
+  # Comando de build (npm install se ejecuta automáticamente antes)
+  command = "npm install && npm run build"
 
 [build.environment]
   # Versión de Node.js
