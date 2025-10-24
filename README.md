@@ -57,11 +57,13 @@ vanilla/
 │
 ├── js/                       # JavaScript
 │   ├── components/           # Modular components
+│   │   ├── Accordion.js      # Collapsible panels
 │   │   ├── Autocomplete.js   # Autocomplete input
 │   │   ├── Badge.js          # Status badges
 │   │   ├── Buttons.js        # Buttons (solid, outline, icon)
 │   │   ├── Calendar.js       # Date picker
 │   │   ├── Card.js           # Content cards
+│   │   ├── CascadeMenu.js    # Hierarchical menu
 │   │   ├── Checkbox.js       # Checkboxes
 │   │   ├── Chips.js          # Removable tags/chips
 │   │   ├── Dialog.js         # Modal dialogs
@@ -86,7 +88,11 @@ vanilla/
 ├── styles/                   # CSS styles
 │   └── main.css              # Main styles
 │
-├── build.js                  # Build script
+├── vendor/                   # Vendor dependencies (auto-generated)
+│   └── maxi-web-components/  # Symlink to node_modules (local dev)
+│
+├── build.js                  # Build script for production
+├── setup-vendor.js           # Setup script for local development
 ├── index.html                # Main page
 ├── package.json              # Dependencies and scripts
 ├── netlify.toml              # Netlify configuration
@@ -115,6 +121,8 @@ vanilla/
 |-----------|-------------|------|
 | **Tabs** | Navigation tabs | `Tabs.js` |
 | **Sidebar** | Sidebar navigation | `Sidebar.js` |
+| **Accordion** | Collapsible content panels | `Accordion.js` |
+| **Cascade Menu** | Hierarchical dropdown menu | `CascadeMenu.js` |
 
 ### 📄 Paginator
 | Component | Description | File |
@@ -303,9 +311,10 @@ npm run build
 - ✅ Copies `js/` folder
 - ✅ Copies `styles/` folder
 - ✅ Copies `assets/` folder
-- ✅ Copies `maxi-web-components` from `node_modules`
-- ✅ Copies `global.css` from the library
-- ✅ Copies fonts and assets from the library
+- ✅ Copies `maxi-web-components` to `vendor/` folder
+  - Includes `global.css`
+  - Includes all JS modules
+  - Includes fonts and assets
 
 ### `npm run deploy`
 Builds and deploys to Netlify

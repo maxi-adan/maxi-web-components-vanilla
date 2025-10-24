@@ -22,6 +22,8 @@ import Dialog from "./components/Dialog.js";
 import Preload from "./components/Preload.js";
 import Skeleton from "./components/Skeleton.js";
 import Spinner from "./components/Spinner.js";
+import CascadeMenu from "./components/CascadeMenu.js";
+import Accordion from "./components/Accordion.js";
 
 class ComponentsApp {
   constructor() {
@@ -38,6 +40,7 @@ class ComponentsApp {
         { name: "Calendar", component: Calendar },
       ],
       navigation: [
+        { name: "CascadeMenu", component: CascadeMenu },
         { name: "Tabs", component: Tabs },
         { name: "Sidebar", component: Sidebar },
       ],
@@ -50,6 +53,7 @@ class ComponentsApp {
         { name: "Card", component: Card },
         { name: "Badge", component: Badge },
         { name: "Timeline", component: Timeline },
+        { name: "Accordion", component: Accordion },
       ],
       data: [{ name: "Table", component: Table }],
       feedback: [
