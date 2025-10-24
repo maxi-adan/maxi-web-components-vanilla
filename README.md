@@ -1,9 +1,5 @@
 # 🚀 Maxi Web Components - Vanilla JS Showcase
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 A complete demonstration application showcasing all components from the **Maxi Web Components** library working with **pure Vanilla JavaScript**, no frameworks required.
 
 ![Maxi Web Components Preview](./assets/logo.png)
