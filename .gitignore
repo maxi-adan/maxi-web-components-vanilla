@@ -10,7 +10,7 @@ yarn-error.log
 yarn-debug.log
 .netlifyignore
 # Production builds
- dist/
+dist/
 build/
 
 # Environment variables
