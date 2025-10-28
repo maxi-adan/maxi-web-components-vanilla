@@ -115,7 +115,7 @@ vanilla/
 | **Dropdown** | Dropdown/Select | `Dropdown.js` |
 | **MultiSelect** | Select with multiple selection | `MultiSelect.js` |
 | **Calendar** | Date picker | `Calendar.js` |
-| **Input OTP** | One Time-Password verification | `InputOTP.js` |
+| **Input OTP** | One-Time Password verification | `InputOTP.js` |
 
 ### 🧭 Navigation Components
 | Component | Description | File |
