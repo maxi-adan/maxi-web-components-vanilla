@@ -10,7 +10,7 @@ class InputOTPComponent {
     card.innerHTML = `
             <div class="component-header">
                 <h3 class="component-title">Input OTP</h3>
-                <p class="component-description">Input OTP for One Time-Password verification</p>
+                <p class="component-description">Input OTP for One-Time Password verification</p>
             </div>
             <div class="component-preview">
                 <ms-input-otp id="otp-id" length="4"></ms-input-otp>
