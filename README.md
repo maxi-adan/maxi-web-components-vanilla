@@ -123,7 +123,6 @@ vanilla/
 |-----------|-------------|------|
 | **Tabs** | Navigation tabs | `Tabs.js` |
 | **Sidebar** | Sidebar navigation | `Sidebar.js` |
-| **Accordion** | Collapsible content panels | `Accordion.js` |
 | **Cascade Menu** | Hierarchical dropdown menu | `CascadeMenu.js` |
 
 ### 📄 Paginator
@@ -146,6 +145,7 @@ vanilla/
 | **Spinner** | Loading spinner | `Spinner.js` |
 | **Skeleton** | Animated loading placeholders | `Skeleton.js` |
 | **Preload** | Global loading overlay | `Preload.js` |
+| **Accordion** | Collapsible content panels | `Accordion.js` |
 
 ### 📊 Data Components
 | Component | Description | File |
