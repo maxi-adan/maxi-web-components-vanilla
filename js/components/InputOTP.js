@@ -1,6 +1,6 @@
 /**
  * Input OTP Component
- * One Time-Password verification
+ * One-Time Password verification
  */
 class InputOTPComponent {
   static render() {
