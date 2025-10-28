@@ -24,6 +24,7 @@ import Skeleton from "./components/Skeleton.js";
 import Spinner from "./components/Spinner.js";
 import CascadeMenu from "./components/CascadeMenu.js";
 import Accordion from "./components/Accordion.js";
+import InputOTP from "./components/InputOTP.js";
 
 class ComponentsApp {
   constructor() {
@@ -38,6 +39,7 @@ class ComponentsApp {
         { name: "Dropdown", component: Dropdown },
         { name: "MultiSelect", component: MultiSelect },
         { name: "Calendar", component: Calendar },
+        { name: "InputOTP", component: InputOTP },
       ],
       navigation: [
         { name: "CascadeMenu", component: CascadeMenu },
