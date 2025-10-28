@@ -69,6 +69,7 @@ vanilla/
 │   │   ├── Dialog.js         # Modal dialogs
 │   │   ├── Dropdown.js       # Dropdowns/Selects
 │   │   ├── InputField.js     # Text inputs
+│   │   ├── InputOTP.js       # One-Time Password verification
 │   │   ├── InputNumber.js    # Number inputs
 │   │   ├── InputRadio.js     # Radio buttons
 │   │   ├── InputSwitch.js    # Toggle switches
