@@ -37,11 +37,11 @@ class ButtonsComponent {
                     <div class="button-category">
                     <h4 class="button-category-title">Icon Buttons (Solid)</h4>
                     <div class="button-row">
-                        <ms-button icon="/assets/icons/filter.svg" variant="primary"></ms-button>
-                        <ms-button icon="/assets/icons/eraser-icon.svg" variant="secondary"></ms-button>
-                        <ms-button icon="/assets/icons/edit.svg" variant="success"></ms-button>
-                        <ms-button icon="/assets/icons/excel.svg" variant="warning"></ms-button>
-                        <ms-button icon="/assets/icons/trash.svg" variant="danger"></ms-button>
+                        <ms-button icon="./assets/icons/filter.svg" variant="primary"></ms-button>
+                        <ms-button icon="./assets/icons/eraser-icon.svg" variant="secondary"></ms-button>
+                        <ms-button icon="./assets/icons/edit.svg" variant="success"></ms-button>
+                        <ms-button icon="./assets/icons/excel.svg" variant="warning"></ms-button>
+                        <ms-button icon="./assets/icons/trash.svg" variant="danger"></ms-button>
                     </div>
                     </div>
 
@@ -49,11 +49,11 @@ class ButtonsComponent {
                     <div class="button-category">
                     <h4 class="button-category-title">Icon Buttons (Outline)</h4>
                     <div class="button-row">
-                        <ms-button icon="/assets/icons/filter.svg" variant="outline-primary"></ms-button>
-                        <ms-button icon="/assets/icons/eraser-icon.svg" variant="outline-secondary"></ms-button>
-                        <ms-button icon="/assets/icons/edit.svg" variant="outline-success"></ms-button>
-                        <ms-button icon="/assets/icons/excel.svg" variant="outline-warning"></ms-button>
-                        <ms-button icon="/assets/icons/trash.svg" variant="outline-danger"></ms-button>
+                        <ms-button icon="./assets/icons/filter.svg" variant="outline-primary"></ms-button>
+                        <ms-button icon="./assets/icons/eraser-icon.svg" variant="outline-secondary"></ms-button>
+                        <ms-button icon="./assets/icons/edit.svg" variant="outline-success"></ms-button>
+                        <ms-button icon="./assets/icons/excel.svg" variant="outline-warning"></ms-button>
+                        <ms-button icon="./assets/icons/trash.svg" variant="outline-danger"></ms-button>
                     </div>
                     </div>
               </div>

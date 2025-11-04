@@ -20,7 +20,7 @@ class PreloadComponent {
 
       const showLoader = () => {
         const preloadElement = document.createElement("ms-preload");
-        preloadElement.image = "/assets/loading.gif";
+        preloadElement.image = "./assets/loading.gif";
         document.body.appendChild(preloadElement);
 
         setTimeout(() => {

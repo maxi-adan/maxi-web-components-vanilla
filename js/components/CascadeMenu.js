@@ -10,7 +10,7 @@ class CascadeMenuComponent {
                      </div>
                     <div class="component-preview" style="display: flex; justify-content: start; align-items: start;">
                         <ms-cascade-menu [menuData]="nestedMenuData">
-                            <ms-button icon="assets/icons/points.svg" variant="primary"></ms-button>
+                            <ms-button icon="./assets/icons/points.svg" variant="primary"></ms-button>
                         </ms-cascade-menu>
                     </div>
         `;

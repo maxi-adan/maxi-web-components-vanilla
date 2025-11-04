@@ -42,8 +42,12 @@ class DialogComponent {
       const dialog = cardElement.querySelector("ms-dialog");
       openDialog.addEventListener("click", () => {
         dialog.visible = true;
-      });
+        });
       closeDialog.addEventListener("click", () => {
+        dialog.visible = false;
+      });
+
+      dialog.addEventListener("hide", () => {
         dialog.visible = false;
       });
     }, 0);
