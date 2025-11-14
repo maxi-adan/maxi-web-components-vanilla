@@ -6,6 +6,7 @@ class TableComponent {
         card.innerHTML = `
             <ms-table
                 id="id-table"
+                size="small"
                 paginator="true"
                 selection-row="true"
                 expandable-row="true"

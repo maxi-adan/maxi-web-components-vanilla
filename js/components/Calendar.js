@@ -10,6 +10,7 @@ class CalendarComponent {
               </div>
               <div class="component-preview">
                     <ms-calendar
+                      label="Calendar"
                       style="width: 100%;"
                       show-icon="true"></ms-calendar>
               </div>

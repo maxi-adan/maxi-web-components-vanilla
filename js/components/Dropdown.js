@@ -14,6 +14,7 @@ class DropdownComponent {
             </div>
             <div class="component-preview">
                             <ms-dropdown
+                            label="Dropdown"
                             style="width: 100%;"
                             id="dropdown"
                             placeholder="Select an option"></ms-dropdown>

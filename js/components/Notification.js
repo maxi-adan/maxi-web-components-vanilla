@@ -9,10 +9,12 @@ class NotificationComponent {
                   <p class="component-description">Toast notifications for user feedback - Click on elements to see them in action</p>
               </div>
               <div class="component-preview">
-                <ms-badge style="cursor: pointer;" value="Alert" severity="danger" data-severity="alert" class="badge-notification" />
-                <ms-badge style="cursor: pointer;" value="Warning" severity="warning" data-severity="warning" class="badge-notification" />
-                 <ms-badge style="cursor: pointer;" value="Success" severity="success" data-severity="success" class="badge-notification" />
-                <ms-badge style="cursor: pointer;" value="Information" severity="info" data-severity="info" class="badge-notification" />
+                <div style="display: flex; gap: 10px;">
+                  <ms-badge style="cursor: pointer;" value="Alert" severity="danger" data-severity="alert" class="badge-notification"></ms-badge>
+                  <ms-badge style="cursor: pointer;" value="Warning" severity="warning" data-severity="warning" class="badge-notification"></ms-badge>
+                   <ms-badge style="cursor: pointer;" value="Success" severity="success" data-severity="success" class="badge-notification"></ms-badge>
+                  <ms-badge style="cursor: pointer;" value="Information" severity="info" data-severity="info" class="badge-notification"></ms-badge>
+                </div>
 
                 <ms-notification />              
               </div>

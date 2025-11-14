@@ -13,7 +13,7 @@ class InputFieldComponent {
                 <p class="component-description">Text input with validation and styling options</p>
             </div>
             <div class="component-preview">
-                <ms-input-field style="width: 100%;" id="input-id"></ms-input-field>
+                <ms-input-field label="Input Field" style="width: 100%;" id="input-id"></ms-input-field>
             </div>
         `;
 

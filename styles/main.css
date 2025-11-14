@@ -257,9 +257,14 @@ body::before {
 }
 
 #data-grid .component-card,
-#paginator-grid .component-card {
+#paginator-grid .component-card,
+#navigation-grid .component-card:first-child {
   grid-column: 1 / -1;
   max-width: none;
+}
+
+#navigation-grid.components-grid {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media (min-width: 1400px) {
