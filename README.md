@@ -73,6 +73,7 @@ vanilla/
 │   │   ├── InputNumber.js    # Number inputs
 │   │   ├── InputRadio.js     # Radio buttons
 │   │   ├── InputSwitch.js    # Toggle switches
+│   │   ├── Menubar.js        # Horizontal navigation menu
 │   │   ├── MultiSelect.js    # Multiple selects
 │   │   ├── Notification.js   # Toast notifications
 │   │   ├── Paginator.js      # Paginator
@@ -124,6 +125,7 @@ vanilla/
 | **Tabs** | Navigation tabs | `Tabs.js` |
 | **Sidebar** | Sidebar navigation | `Sidebar.js` |
 | **Cascade Menu** | Hierarchical dropdown menu | `CascadeMenu.js` |
+| **Menubar** | Horizontal navigation menu | `Menubar.js` |
 
 ### 📄 Paginator
 | Component | Description | File |
@@ -525,7 +527,7 @@ Contributions are welcome. Please:
 
 **Maxi Web Components Team**
 
-- 🌐 Website: https://vocal-travesseiro-7c2cd5.netlify.app/
+- 🌐 Website: https://storybook-mwc.maxilabs.net/js/
 - 📧 Email: ext.aasanchez@maxillc.com
 
 ---

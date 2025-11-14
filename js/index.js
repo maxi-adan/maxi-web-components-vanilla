@@ -25,7 +25,7 @@ import Spinner from "./components/Spinner.js";
 import CascadeMenu from "./components/CascadeMenu.js";
 import Accordion from "./components/Accordion.js";
 import InputOTP from "./components/InputOTP.js";
-
+import Menubar from "./components/Menubar.js";
 class ComponentsApp {
   constructor() {
     this.categories = {
@@ -42,6 +42,7 @@ class ComponentsApp {
         { name: "InputOTP", component: InputOTP },
       ],
       navigation: [
+        { name: "Menubar", component: Menubar },
         { name: "CascadeMenu", component: CascadeMenu },
         { name: "Tabs", component: Tabs },
         { name: "Sidebar", component: Sidebar },
@@ -101,7 +102,6 @@ class ComponentsApp {
   }
 }
 
-// Inicializar la aplicación cuando el DOM esté listo
 document.addEventListener("DOMContentLoaded", () => {
   new ComponentsApp();
 });

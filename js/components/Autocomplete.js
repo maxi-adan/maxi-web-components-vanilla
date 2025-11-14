@@ -15,6 +15,7 @@ class AutocompleteComponent {
             <div class="component-preview">
                 <div class="autocomplete-container">
                      <ms-autocomplete
+                        label="Autocomplete"
                         option-group="false"
                         id="autocomplete"
                         placeholder="Type to search..."

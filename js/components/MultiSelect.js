@@ -14,6 +14,7 @@ class MultiSelectComponent {
             </div>
             <div class="component-preview">
               <ms-multiselect
+              label="Multi Select"
               style="width: 100%;"
                 placeholder="Select options"></ms-multiselect>
             </div>

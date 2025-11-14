@@ -8,9 +8,9 @@ class CascadeMenuComponent {
                         <h3 class="component-title">Cascade Menu</h3>
                         <p class="component-description">Hierarchical dropdown menu with nested navigation options.</p>
                      </div>
-                    <div class="component-preview">
+                    <div style="background:white;" class="component-preview">
                       <ms-accordion multiple="true" style="width: 100%;">
-                            <div slot="header-0"><strong>Tab One</strong></div>
+                            <div slot="header-0"><span>Tab One</span></div>
                             <div slot="content-0">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
@@ -33,7 +33,7 @@ class CascadeMenuComponent {
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>
 
-                            <div slot="header-2"><strong>Tab Three</strong></div>
+                            <div slot="header-2"><span>Tab Three</span></div>
                             <div slot="content-2">
                               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </div>

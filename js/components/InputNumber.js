@@ -13,7 +13,7 @@ class InputNumberComponent {
                 <p class="component-description">Numeric input with increment/decrement controls</p>
             </div>
             <div class="component-preview">
-               <ms-input-number style="width: 100%;" id="input-id"></ms-input-number>
+               <ms-input-number label="Input Number" style="width: 100%;" id="input-id"></ms-input-number>
             </div>
         `;
         
