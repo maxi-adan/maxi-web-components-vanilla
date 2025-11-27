@@ -26,6 +26,7 @@ import CascadeMenu from "./components/CascadeMenu.js";
 import Accordion from "./components/Accordion.js";
 import InputOTP from "./components/InputOTP.js";
 import Menubar from "./components/Menubar.js";
+import Carousel from "./components/Carousel.js";
 class ComponentsApp {
   constructor() {
     this.categories = {
@@ -57,6 +58,7 @@ class ComponentsApp {
         { name: "Badge", component: Badge },
         { name: "Timeline", component: Timeline },
         { name: "Accordion", component: Accordion },
+        { name: "Carousel", component: Carousel },
       ],
       data: [{ name: "Table", component: Table }],
       feedback: [

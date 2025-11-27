@@ -63,6 +63,7 @@ vanilla/
 │   │   ├── Buttons.js        # Buttons (solid, outline, icon)
 │   │   ├── Calendar.js       # Date picker
 │   │   ├── Card.js           # Content cards
+│   │   ├── Carousel.js       # Interactive carousel for displaying multiple items with navigation
 │   │   ├── CascadeMenu.js    # Hierarchical menu
 │   │   ├── Checkbox.js       # Checkboxes
 │   │   ├── Chips.js          # Removable tags/chips
@@ -148,6 +149,7 @@ vanilla/
 | **Skeleton** | Animated loading placeholders | `Skeleton.js` |
 | **Preload** | Global loading overlay | `Preload.js` |
 | **Accordion** | Collapsible content panels | `Accordion.js` |
+| **Carousel** | Interactive carousel for displaying multiple items with navigation | `Carousel.js` |
 
 ### 📊 Data Components
 | Component | Description | File |

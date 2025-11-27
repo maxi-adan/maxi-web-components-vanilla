@@ -5,8 +5,8 @@ class CascadeMenuComponent {
 
     card.innerHTML = `
                     <div class="component-header">
-                        <h3 class="component-title">Cascade Menu</h3>
-                        <p class="component-description">Hierarchical dropdown menu with nested navigation options.</p>
+                        <h3 class="component-title">Accordion</h3>
+                        <p class="component-description">Collapsible content sections for organized information display.</p>
                      </div>
                     <div style="background:white;" class="component-preview">
                       <ms-accordion multiple="true" style="width: 100%;">

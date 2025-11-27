@@ -13,6 +13,6 @@
     "http-server": "^14.1.1"
   },
   "dependencies": {
-    "maxi-web-components": "^5.0.1"
+    "maxi-web-components": "^5.0.2"
   }
 }
