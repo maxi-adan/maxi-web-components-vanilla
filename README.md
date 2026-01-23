@@ -63,25 +63,31 @@ vanilla/
 │   │   ├── Buttons.js        # Buttons (solid, outline, icon)
 │   │   ├── Calendar.js       # Date picker
 │   │   ├── Card.js           # Content cards
+│   │   ├── Breadcrumb.js     # Navigation breadcrumb trail
 │   │   ├── Carousel.js       # Interactive carousel for displaying multiple items with navigation
 │   │   ├── CascadeMenu.js    # Hierarchical menu
 │   │   ├── Checkbox.js       # Checkboxes
 │   │   ├── Chips.js          # Removable tags/chips
+│   │   ├── ControlNumber.js  # Numeric control input
 │   │   ├── Dialog.js         # Modal dialogs
 │   │   ├── Dropdown.js       # Dropdowns/Selects
+│   │   ├── FieldSet.js       # Grouped form fields with collapsible legend
 │   │   ├── InputField.js     # Text inputs
 │   │   ├── InputOTP.js       # One-Time Password verification
 │   │   ├── InputNumber.js    # Number inputs
 │   │   ├── InputRadio.js     # Radio buttons
 │   │   ├── InputSwitch.js    # Toggle switches
 │   │   ├── Menubar.js        # Horizontal navigation menu
+│   │   ├── Messages.js       # Contextual messages with multiple variants
 │   │   ├── MultiSelect.js    # Multiple selects
 │   │   ├── Notification.js   # Toast notifications
 │   │   ├── Paginator.js      # Paginator
 │   │   ├── Preload.js        # Loading overlay
+│   │   ├── ProgressBar.js   # Progress indicator
 │   │   ├── Sidebar.js        # Sidebar
 │   │   ├── Skeleton.js       # Loading placeholders
 │   │   ├── Spinner.js        # Loading spinner
+│   │   ├── Steps.js          # Step-by-step navigation
 │   │   ├── Table.js          # Data tables
 │   │   ├── Tabs.js           # Tabs
 │   │   ├── Timeline.js       # Timeline
@@ -119,14 +125,17 @@ vanilla/
 | **MultiSelect** | Select with multiple selection | `MultiSelect.js` |
 | **Calendar** | Date picker | `Calendar.js` |
 | **Input OTP** | One-Time Password verification | `InputOTP.js` |
+| **Control Number** | Numeric control input for managing numeric values | `ControlNumber.js` |
 
 ### 🧭 Navigation Components
 | Component | Description | File |
 |-----------|-------------|------|
+| **Menubar** | Horizontal navigation menu | `Menubar.js` |
+| **Breadcrumb** | Navigation breadcrumb trail showing current page location | `Breadcrumb.js` |
+| **Cascade Menu** | Hierarchical dropdown menu | `CascadeMenu.js` |
 | **Tabs** | Navigation tabs | `Tabs.js` |
 | **Sidebar** | Sidebar navigation | `Sidebar.js` |
-| **Cascade Menu** | Hierarchical dropdown menu | `CascadeMenu.js` |
-| **Menubar** | Horizontal navigation menu | `Menubar.js` |
+| **Steps** | Step-by-step navigation component - Click on each step to navigate | `Steps.js` |
 
 ### 📄 Paginator
 | Component | Description | File |
@@ -144,10 +153,12 @@ vanilla/
 |-----------|-------------|------|
 | **Card** | Content cards | `Card.js` |
 | **Badge** | Status badges | `Badge.js` |
+| **Fieldset** | Grouped form fields with collapsible legend for organizing related inputs | `FieldSet.js` |
 | **Timeline** | Timeline | `Timeline.js` |
 | **Spinner** | Loading spinner | `Spinner.js` |
 | **Skeleton** | Animated loading placeholders | `Skeleton.js` |
 | **Preload** | Global loading overlay | `Preload.js` |
+| **Progress Bar** | Progress indicator for showing completion status or loading state | `ProgressBar.js` |
 | **Accordion** | Collapsible content panels | `Accordion.js` |
 | **Carousel** | Interactive carousel for displaying multiple items with navigation | `Carousel.js` |
 
@@ -162,6 +173,7 @@ vanilla/
 | **Notification** | Toast notifications | `Notification.js` |
 | **Dialog** | Modal dialogs | `Dialog.js` |
 | **Tooltip** | Informative tooltips | `Tooltip.js` |
+| **Message** | Contextual messages for displaying different types of feedback with multiple variants | `Messages.js` |
 
 ---
 
