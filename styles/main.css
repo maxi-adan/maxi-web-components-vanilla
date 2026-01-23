@@ -258,9 +258,25 @@ body::before {
 
 #data-grid .component-card,
 #paginator-grid .component-card,
-#navigation-grid .component-card:first-child {
+#navigation-grid .component-card:first-child,
+#navigation-grid .component-card:nth-child(2),
+#navigation-grid .component-card:last-child,
+#feedback-grid .component-card:last-child {
   grid-column: 1 / -1;
   max-width: none;
+}
+
+#feedback-grid .component-card:nth-child(-n+3) {
+  grid-column: span 1;
+  max-width: none;
+}
+
+#feedback-grid.components-grid {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+#feedback-grid .component-card:nth-child(4) {
+  grid-column: 1 / -1;
 }
 
 #navigation-grid.components-grid {

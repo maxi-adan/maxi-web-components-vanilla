@@ -27,6 +27,12 @@ import Accordion from "./components/Accordion.js";
 import InputOTP from "./components/InputOTP.js";
 import Menubar from "./components/Menubar.js";
 import Carousel from "./components/Carousel.js";
+import Breadcrumb from "./components/Breadcrumb.js";
+import ControlNumber from "./components/ControlNumber.js";
+import FieldSet from "./components/FieldSet.js";
+import Messages from "./components/Messages.js";
+import ProgressBar from "./components/ProgressBar.js";
+import Steps from "./components/Steps.js";
 class ComponentsApp {
   constructor() {
     this.categories = {
@@ -41,12 +47,15 @@ class ComponentsApp {
         { name: "MultiSelect", component: MultiSelect },
         { name: "Calendar", component: Calendar },
         { name: "InputOTP", component: InputOTP },
+        { name: "ControlNumber", component: ControlNumber },
       ],
       navigation: [
         { name: "Menubar", component: Menubar },
+        { name: "Breadcrumb", component: Breadcrumb },
         { name: "CascadeMenu", component: CascadeMenu },
         { name: "Tabs", component: Tabs },
         { name: "Sidebar", component: Sidebar },
+        { name: "Steps", component: Steps },
       ],
       paginator: [{ name: "Paginator", component: Paginator }],
       actions: [
@@ -56,6 +65,7 @@ class ComponentsApp {
       display: [
         { name: "Card", component: Card },
         { name: "Badge", component: Badge },
+        { name: "FieldSet", component: FieldSet },
         { name: "Timeline", component: Timeline },
         { name: "Accordion", component: Accordion },
         { name: "Carousel", component: Carousel },
@@ -65,11 +75,13 @@ class ComponentsApp {
         { name: "Notification", component: Notification },
         { name: "Tooltip", component: Tooltip },
         { name: "Dialog", component: Dialog },
+        { name: "Messages", component: Messages },
       ],
       state: [
         { name: "Preload", component: Preload },
         { name: "Skeleton", component: Skeleton },
         { name: "Spinner", component: Spinner },
+        { name: "ProgressBar", component: ProgressBar },
       ],
     };
 
