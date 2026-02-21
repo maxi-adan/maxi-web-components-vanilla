@@ -5,15 +5,17 @@
 class CarouselComponent {
   static render() {
     const card = document.createElement("div");
-    card.className = "component-card";
+    card.className = "component-card full-width-card";
 
     card.innerHTML = `
             <div class="component-header">
                 <h3 class="component-title">Carousel</h3>
                 <p class="component-description">Interactive carousel for displaying multiple items with navigation</p>
             </div>
-            <div class="component-preview" style="padding: 0; width: 100%;">
-                <ms-carousel id="carousel-id" style="width: 100%;"></ms-carousel>              
+            <div class="component-preview">
+                <div style="width: 100%;">
+                    <ms-carousel id="carousel-id" style="width: 100%;"></ms-carousel>
+                </div>
             </div>
         `;
 

@@ -77,6 +77,13 @@ vanilla/
 │   │   ├── InputNumber.js    # Number inputs
 │   │   ├── InputRadio.js     # Radio buttons
 │   │   ├── InputSwitch.js    # Toggle switches
+│   │   ├── InputPassword.js  # Password input with strength indicator
+│   │   ├── Knob.js           # Rotary input component
+│   │   ├── Image.js          # Image component with preview
+│   │   ├── MeterGroup.js     # Meter group display
+│   │   ├── Popover.js        # Popover display
+│   │   ├── SelectButton.js   # Group of toggle buttons
+│   │   ├── TextEditor.js     # WYSIWYG rich text editor
 │   │   ├── Menubar.js        # Horizontal navigation menu
 │   │   ├── Messages.js       # Contextual messages with multiple variants
 │   │   ├── MultiSelect.js    # Multiple selects
@@ -113,67 +120,90 @@ vanilla/
 ## 🧩 Available Components
 
 ### 📝 Input Components
-| Component | Description | File |
-|-----------|-------------|------|
-| **Input Field** | Basic text input field | `InputField.js` |
-| **Input Number** | Numeric input with increment/decrement | `InputNumber.js` |
-| **Input Switch** | On/off toggle switch | `InputSwitch.js` |
-| **Input Radio** | Radio buttons with multiple options | `InputRadio.js` |
-| **Checkbox** | Checkboxes for multiple selection | `Checkbox.js` |
-| **Autocomplete** | Input with autocomplete | `Autocomplete.js` |
-| **Dropdown** | Dropdown/Select | `Dropdown.js` |
-| **MultiSelect** | Select with multiple selection | `MultiSelect.js` |
-| **Calendar** | Date picker | `Calendar.js` |
-| **Input OTP** | One-Time Password verification | `InputOTP.js` |
+
+| Component          | Description                                       | File               |
+| ------------------ | ------------------------------------------------- | ------------------ |
+| **Input Field**    | Basic text input field                            | `InputField.js`    |
+| **Input Number**   | Numeric input with increment/decrement            | `InputNumber.js`   |
+| **Input Switch**   | On/off toggle switch                              | `InputSwitch.js`   |
+| **Input Radio**    | Radio buttons with multiple options               | `InputRadio.js`    |
+| **Checkbox**       | Checkboxes for multiple selection                 | `Checkbox.js`      |
+| **Autocomplete**   | Input with autocomplete                           | `Autocomplete.js`  |
+| **Dropdown**       | Dropdown/Select                                   | `Dropdown.js`      |
+| **MultiSelect**    | Select with multiple selection                    | `MultiSelect.js`   |
+| **Calendar**       | Date picker                                       | `Calendar.js`      |
+| **Input OTP**      | One-Time Password verification                    | `InputOTP.js`      |
 | **Control Number** | Numeric control input for managing numeric values | `ControlNumber.js` |
+| **Input Password** | Secure password input with strength indicator     | `InputPassword.js` |
+| **Knob**           | Rotary input component for numerical values       | `Knob.js`          |
+| **Text Editor**    | WYSIWYG editor with rich text capabilities        | `TextEditor.js`    |
 
 ### 🧭 Navigation Components
-| Component | Description | File |
-|-----------|-------------|------|
-| **Menubar** | Horizontal navigation menu | `Menubar.js` |
-| **Breadcrumb** | Navigation breadcrumb trail showing current page location | `Breadcrumb.js` |
-| **Cascade Menu** | Hierarchical dropdown menu | `CascadeMenu.js` |
-| **Tabs** | Navigation tabs | `Tabs.js` |
-| **Sidebar** | Sidebar navigation | `Sidebar.js` |
-| **Steps** | Step-by-step navigation component - Click on each step to navigate | `Steps.js` |
+
+| Component        | Description                                                        | File             |
+| ---------------- | ------------------------------------------------------------------ | ---------------- |
+| **Menubar**      | Horizontal navigation menu                                         | `Menubar.js`     |
+| **Breadcrumb**   | Navigation breadcrumb trail showing current page location          | `Breadcrumb.js`  |
+| **Cascade Menu** | Hierarchical dropdown menu                                         | `CascadeMenu.js` |
+| **Tabs**         | Navigation tabs                                                    | `Tabs.js`        |
+| **Sidebar**      | Sidebar navigation                                                 | `Sidebar.js`     |
+| **Steps**        | Step-by-step navigation component - Click on each step to navigate | `Steps.js`       |
+| **Popover**      | Contextual menu display relative to a trigger element              | `Popover.js`     |
 
 ### 📄 Paginator
-| Component | Description | File |
-|-----------|-------------|------|
+
+| Component     | Description                     | File           |
+| ------------- | ------------------------------- | -------------- |
 | **Paginator** | Pagination control with options | `Paginator.js` |
 
 ### 🎬 Action Components
-| Component | Description | File |
-|-----------|-------------|------|
-| **Buttons** | Buttons (solid, outline, icon) | `Buttons.js` |
-| **Chips** | Removable tags/chips | `Chips.js` |
+
+| Component         | Description                                       | File              |
+| ----------------- | ------------------------------------------------- | ----------------- |
+| **Buttons**       | Buttons (solid, outline, icon)                    | `Buttons.js`      |
+| **Chips**         | Removable tags/chips                              | `Chips.js`        |
+| **Select Button** | Group of buttons for single or multiple selection | `SelectButton.js` |
 
 ### 🎨 Display Components
-| Component | Description | File |
-|-----------|-------------|------|
-| **Card** | Content cards | `Card.js` |
-| **Badge** | Status badges | `Badge.js` |
-| **Fieldset** | Grouped form fields with collapsible legend for organizing related inputs | `FieldSet.js` |
-| **Timeline** | Timeline | `Timeline.js` |
-| **Spinner** | Loading spinner | `Spinner.js` |
-| **Skeleton** | Animated loading placeholders | `Skeleton.js` |
-| **Preload** | Global loading overlay | `Preload.js` |
-| **Progress Bar** | Progress indicator for showing completion status or loading state | `ProgressBar.js` |
-| **Accordion** | Collapsible content panels | `Accordion.js` |
-| **Carousel** | Interactive carousel for displaying multiple items with navigation | `Carousel.js` |
+
+| Component        | Description                                                               | File             |
+| ---------------- | ------------------------------------------------------------------------- | ---------------- |
+| **Card**         | Content cards                                                             | `Card.js`        |
+| **Badge**        | Status badges                                                             | `Badge.js`       |
+| **Fieldset**     | Grouped form fields with collapsible legend for organizing related inputs | `FieldSet.js`    |
+| **Timeline**     | Timeline                                                                  | `Timeline.js`    |
+| **Spinner**      | Loading spinner                                                           | `Spinner.js`     |
+| **Skeleton**     | Animated loading placeholders                                             | `Skeleton.js`    |
+| **Preload**      | Global loading overlay                                                    | `Preload.js`     |
+| **Progress Bar** | Progress indicator for showing completion status or loading state         | `ProgressBar.js` |
+| **Accordion**    | Collapsible content panels                                                | `Accordion.js`   |
+| **Carousel**     | Interactive carousel for displaying multiple items with navigation        | `Carousel.js`    |
+| **Image**        | Image component with preview and zoom capabilities                        | `Image.js`       |
+| **Meter Group**  | Displays relative values within a range as group of bars                  | `MeterGroup.js`  |
 
 ### 📊 Data Components
-| Component | Description | File |
-|-----------|-------------|------|
+
+| Component | Description                          | File       |
+| --------- | ------------------------------------ | ---------- |
 | **Table** | Tables with pagination and selection | `Table.js` |
 
+### ⚡ State Components
+
+| Component        | Description                   | File             |
+| ---------------- | ----------------------------- | ---------------- |
+| **Preload**      | Global loading overlay        | `Preload.js`     |
+| **Skeleton**     | Animated loading placeholders | `Skeleton.js`    |
+| **Spinner**      | Loading spinner               | `Spinner.js`     |
+| **Progress Bar** | Progress indicator            | `ProgressBar.js` |
+
 ### 💬 Feedback Components
-| Component | Description | File |
-|-----------|-------------|------|
-| **Notification** | Toast notifications | `Notification.js` |
-| **Dialog** | Modal dialogs | `Dialog.js` |
-| **Tooltip** | Informative tooltips | `Tooltip.js` |
-| **Message** | Contextual messages for displaying different types of feedback with multiple variants | `Messages.js` |
+
+| Component        | Description                                                                           | File              |
+| ---------------- | ------------------------------------------------------------------------------------- | ----------------- |
+| **Notification** | Toast notifications                                                                   | `Notification.js` |
+| **Dialog**       | Modal dialogs                                                                         | `Dialog.js`       |
+| **Tooltip**      | Informative tooltips                                                                  | `Tooltip.js`      |
+| **Message**      | Contextual messages for displaying different types of feedback with multiple variants | `Messages.js`     |
 
 ---
 
@@ -187,17 +217,20 @@ vanilla/
 ### Steps
 
 1. **Clone the repository**
+
    ```bash
    git clone <your-repository>
    cd vanilla
    ```
 
 2. **Install dependencies**
+
    ```bash
    npm install
    ```
 
 3. **Start development server**
+
    ```bash
    npm run dev
    ```
@@ -218,11 +251,11 @@ Each component follows this modular structure:
 ```javascript
 // js/components/InputField.js
 class InputFieldComponent {
-    static render() {
-        const card = document.createElement("div");
-        card.className = "component-card";
+  static render() {
+    const card = document.createElement("div");
+    card.className = "component-card";
 
-        card.innerHTML = `
+    card.innerHTML = `
             <div class="component-header">
                 <h3 class="component-title">Input Field</h3>
                 <p class="component-description">Basic text input field</p>
@@ -236,16 +269,16 @@ class InputFieldComponent {
             </div>
         `;
 
-        // Component logic
-        setTimeout(() => {
-            const input = card.querySelector("#input-field");
-            input.addEventListener("input", (e) => {
-                console.log("Value:", e.target.value);
-            });
-        }, 0);
+    // Component logic
+    setTimeout(() => {
+      const input = card.querySelector("#input-field");
+      input.addEventListener("input", (e) => {
+        console.log("Value:", e.target.value);
+      });
+    }, 0);
 
-        return card;
-    }
+    return card;
+  }
 }
 
 export default InputFieldComponent;
@@ -254,18 +287,20 @@ export default InputFieldComponent;
 ### Adding a New Component
 
 1. **Create the component file**
+
    ```bash
    touch js/components/MyComponent.js
    ```
 
 2. **Define the component**
+
    ```javascript
    class MyComponent {
-       static render() {
-           const card = document.createElement("div");
-           card.className = "component-card";
-           
-           card.innerHTML = `
+     static render() {
+       const card = document.createElement("div");
+       card.className = "component-card";
+
+       card.innerHTML = `
                <div class="component-header">
                    <h3 class="component-title">My Component</h3>
                </div>
@@ -273,36 +308,35 @@ export default InputFieldComponent;
                    <ms-my-component></ms-my-component>
                </div>
            `;
-           
-           return card;
-       }
+
+       return card;
+     }
    }
    export default MyComponent;
    ```
 
 3. **Import in `index.js`**
+
    ```javascript
-   import MyComponent from './components/MyComponent.js';
-   
+   import MyComponent from "./components/MyComponent.js";
+
    // Add to the corresponding category
    this.categories = {
-       inputs: [
-           { name: 'MyComponent', component: MyComponent }
-       ]
+     inputs: [{ name: "MyComponent", component: MyComponent }],
    };
    ```
 
 4. **Add section in `index.html`** (if it's a new category)
    ```html
    <section id="my-section" class="section">
-       <div class="section-card">
-           <div class="section-header">
-               <h2 class="section-title">My Section</h2>
-           </div>
-           <div id="my-section-grid" class="components-grid">
-               <!-- Components will be loaded here -->
-           </div>
+     <div class="section-card">
+       <div class="section-header">
+         <h2 class="section-title">My Section</h2>
        </div>
+       <div id="my-section-grid" class="components-grid">
+         <!-- Components will be loaded here -->
+       </div>
+     </div>
    </section>
    ```
 
@@ -311,6 +345,7 @@ export default InputFieldComponent;
 ## 📜 Available Scripts
 
 ### `npm run dev`
+
 Starts a development server at `http://localhost:8080`
 
 ```bash
@@ -318,6 +353,7 @@ npm run dev
 ```
 
 ### `npm run build`
+
 Builds the application for production in the `dist/` folder
 
 ```bash
@@ -325,6 +361,7 @@ npm run build
 ```
 
 **What does the build do?**
+
 - ✅ Copies `index.html`
 - ✅ Copies `js/` folder
 - ✅ Copies `styles/` folder
@@ -335,6 +372,7 @@ npm run build
   - Includes fonts and assets
 
 ### `npm run deploy`
+
 Builds and deploys to Netlify
 
 ```bash
@@ -355,6 +393,7 @@ npm run deploy
    - Connect your Git repository
 
 2. **Build configuration**
+
    ```toml
    # netlify.toml
    [build]
@@ -384,12 +423,14 @@ npm run deploy
 ### Other Platforms
 
 #### Vercel
+
 ```bash
 npm install -g vercel
 vercel
 ```
 
 #### GitHub Pages
+
 ```bash
 npm run build
 # Upload dist/ contents to gh-pages branch
@@ -420,7 +461,6 @@ ComponentsApp (index.js)
 4. Calls the **`render()`** method of each component
 5. **Appends** the returned element to the grid
 
-
 ### Responsive Design
 
 Main breakpoints:
@@ -432,37 +472,40 @@ Main breakpoints:
 ```css
 /* Mobile First */
 .components-grid {
-    grid-template-columns: 1fr;
+  grid-template-columns: 1fr;
 }
 
 /* Tablet */
 @media (min-width: 768px) {
-    .components-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
+  .components-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* Desktop */
 @media (min-width: 1024px) {
-    .components-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
+  .components-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 ```
 
 ### Code Conventions
 
 #### File Names
+
 - **PascalCase** for components: `InputField.js`
 - **camelCase** for utilities: `helpers.js`
 - **kebab-case** for CSS: `main.css`
 
 #### CSS Class Structure
+
 - **BEM-like**: `.component-card`, `.component-header`, `.component-title`
 - **Utility**: `.mb-16`, `.flex`, `.grid`
 - **State**: `.is-active`, `.is-loading`
 
 #### JavaScript
+
 - **ES6 Modules**: `import/export`
 - **Arrow Functions**: When appropriate
 - **Template Literals**: For HTML strings
@@ -473,22 +516,27 @@ Main breakpoints:
 ## 🛠 Technologies
 
 ### Core
+
 - ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white) **HTML5**
 - ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white) **CSS3** (Grid, Flexbox, Custom Properties)
 - ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black) **Vanilla JavaScript** (ES6+)
 
 ### Library
+
 - **Maxi Web Components** (Stencil.js)
 
 ### Tools
+
 - ![Node.js](https://img.shields.io/badge/Node.js-339933?style=flat&logo=node.js&logoColor=white) **Node.js** v18+
 - ![NPM](https://img.shields.io/badge/NPM-CB3837?style=flat&logo=npm&logoColor=white) **npm**
 - **http-server** (Development)
 
 ### Deployment
+
 - ![Netlify](https://img.shields.io/badge/Netlify-00C7B7?style=flat&logo=netlify&logoColor=white) **Netlify**
 
 ### Fonts
+
 - **Google Fonts** - Source Sans Pro
 
 ---
@@ -561,4 +609,3 @@ Contributions are welcome. Please:
 ⭐ If this project helped you, consider giving it a star on GitHub
 
 </div>
-

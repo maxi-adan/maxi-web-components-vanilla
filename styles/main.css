@@ -261,12 +261,15 @@ body::before {
 #navigation-grid .component-card:first-child,
 #navigation-grid .component-card:nth-child(2),
 #navigation-grid .component-card:last-child,
-#feedback-grid .component-card:last-child {
-  grid-column: 1 / -1;
-  max-width: none;
+#feedback-grid .component-card:last-child,
+#display-grid .full-width-card,
+.full-width-card {
+  grid-column: 1 / -1 !important;
+  max-width: none !important;
+  width: 100% !important;
 }
 
-#feedback-grid .component-card:nth-child(-n+3) {
+#feedback-grid .component-card:nth-child(-n + 3) {
   grid-column: span 1;
   max-width: none;
 }
@@ -351,7 +354,6 @@ body::before {
   line-height: 1.5;
 }
 
-
 .component-preview {
   display: flex;
   align-items: center;
@@ -366,7 +368,6 @@ body::before {
   z-index: auto;
   overflow: visible;
 }
-
 
 .input-field {
   width: 100%;
@@ -475,11 +476,11 @@ body::before {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.switch-input:checked+.switch-slider {
+.switch-input:checked + .switch-slider {
   background-color: #3b82f6;
 }
 
-.switch-input:checked+.switch-slider:before {
+.switch-input:checked + .switch-slider:before {
   transform: translateX(26px);
 }
 
@@ -519,11 +520,11 @@ body::before {
   transition: all 0.2s ease;
 }
 
-.radio-input:checked+.radio-custom {
+.radio-input:checked + .radio-custom {
   border-color: #3b82f6;
 }
 
-.radio-input:checked+.radio-custom::after {
+.radio-input:checked + .radio-custom::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -576,12 +577,12 @@ body::before {
   transition: all 0.2s ease;
 }
 
-.checkbox-input:checked+.checkbox-custom {
+.checkbox-input:checked + .checkbox-custom {
   border-color: #3b82f6;
   background-color: #3b82f6;
 }
 
-.checkbox-input:checked+.checkbox-custom::after {
+.checkbox-input:checked + .checkbox-custom::after {
   content: "✓";
   position: absolute;
   top: 50%;
@@ -809,12 +810,10 @@ ms-calendar {
   z-index: 1000;
 }
 
-
 ms-autocomplete {
   z-index: 1000 !important;
   position: relative !important;
 }
-
 
 ms-autocomplete::part(dropdown),
 ms-autocomplete::part(suggestions),
@@ -830,7 +829,6 @@ ms-autocomplete::part(options) {
   width: auto !important;
   min-width: 200px !important;
 }
-
 
 ms-autocomplete::part(dropdown),
 ms-dropdown::part(dropdown),
@@ -848,7 +846,6 @@ ms-calendar::part(calendar) {
   min-width: 200px !important;
 }
 
-
 ms-autocomplete::part(suggestions),
 ms-autocomplete::part(options) {
   z-index: 9999 !important;
@@ -862,7 +859,6 @@ ms-autocomplete::part(options) {
   width: auto !important;
   min-width: 200px !important;
 }
-
 
 ms-autocomplete .dropdown-options,
 ms-dropdown .dropdown-options,
@@ -878,7 +874,6 @@ ms-multiselect .dropdown-options {
   width: auto !important;
   min-width: 200px !important;
 }
-
 
 [role="listbox"],
 [role="menu"],
@@ -899,12 +894,10 @@ ms-multiselect .dropdown-options {
   min-width: 200px !important;
 }
 
-
 .component-card,
 .component-preview {
   overflow: visible !important;
 }
-
 
 .section-card,
 .component-card,
@@ -912,16 +905,13 @@ ms-multiselect .dropdown-options {
 .section,
 .main-content,
 .container {
-
   z-index: auto !important;
 }
-
 
 ms-autocomplete {
   z-index: 1000 !important;
   position: relative !important;
 }
-
 
 ms-autocomplete::part(dropdown),
 ms-autocomplete::part(suggestions),
@@ -938,15 +928,12 @@ ms-autocomplete::part(options) {
   min-width: 200px !important;
 }
 
-
 ms-table {
   width: 100%;
   display: block;
 }
 
-
 .footer {
-
   background: transparent;
   padding: 4px 0;
   margin-top: 80px;
@@ -957,7 +944,6 @@ ms-table {
   color: #6b7280;
   font-size: 14px;
 }
-
 
 @media (max-width: 1024px) {
   .app-header {
@@ -1011,7 +997,6 @@ ms-table {
   }
 }
 
-
 @media (max-width: 640px) {
   .app-header {
     padding: 20px 12px;
@@ -1061,7 +1046,6 @@ ms-table {
     line-height: 1.5;
   }
 }
-
 
 @media (max-width: 768px) {
   .header-container {
@@ -1118,14 +1102,12 @@ ms-table {
   }
 }
 
-
 #actions-grid.components-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 24px;
   padding: 24px;
 }
-
 
 #actions-grid .component-card {
   width: 100%;
@@ -1139,7 +1121,6 @@ ms-table {
   padding: 0px;
   align-items: flex-start;
 }
-
 
 .button-category {
   display: flex;
@@ -1159,7 +1140,6 @@ ms-table {
   width: 100%;
 }
 
-
 .button-row {
   display: flex;
   flex-direction: row;
@@ -1170,7 +1150,6 @@ ms-table {
   padding-top: 12px;
 }
 
-
 .button-row ms-button {
   min-height: 40px;
 }
@@ -1178,7 +1157,6 @@ ms-table {
 .button-row ms-button[label] {
   padding: 6px 10px;
 }
-
 
 .button-row ms-button:not([label]) {
   width: 48px;
@@ -1188,7 +1166,6 @@ ms-table {
   align-items: center;
   justify-content: center;
 }
-
 
 @media (max-width: 640px) {
   #actions-grid .component-preview {
@@ -1210,7 +1187,6 @@ ms-table {
   }
 }
 
-
 @media (max-width: 1024px) {
   #actions-grid.components-grid {
     grid-template-columns: 1fr;
@@ -1225,12 +1201,10 @@ ms-table {
   justify-content: flex-start;
 }
 
-
 .chips-preview ms-chips {
   width: 100%;
   max-width: 600px;
 }
-
 
 .btns-table {
   display: flex;
@@ -1249,7 +1223,6 @@ ms-table {
   justify-content: start;
 }
 
-
 .card-preview {
   padding: 24px;
   display: flex;
@@ -1257,7 +1230,6 @@ ms-table {
   justify-content: center;
   width: 100%;
 }
-
 
 .responsive-card {
   width: 100%;
@@ -1273,7 +1245,6 @@ ms-table {
   justify-content: center;
 }
 
-
 .card-image {
   width: 100%;
   height: auto;
@@ -1281,14 +1252,12 @@ ms-table {
   display: block;
 }
 
-
 .card-content-text {
   font-size: 14px;
   line-height: 1.6;
   color: #374151;
   margin: 16px 0;
 }
-
 
 @media (max-width: 768px) {
   .card-preview {
@@ -1303,8 +1272,6 @@ ms-table {
     border-radius: 8px;
     overflow: hidden;
   }
-
-
 }
 
 @media (max-width: 480px) {
@@ -1315,14 +1282,11 @@ ms-table {
   .card-content-text {
     font-size: 13px;
   }
-
-
 }
 
 .card-component-wrapper {
   width: 100%;
 }
-
 
 .skeleton-showcase {
   display: flex;
@@ -1331,7 +1295,6 @@ ms-table {
   width: 100%;
 }
 
-
 #display-grid.components-grid {
   display: flex;
   flex-wrap: wrap;
@@ -1339,18 +1302,17 @@ ms-table {
   padding: 24px;
 }
 
-
 #display-grid .component-card {
   flex: 1 1 calc(33.333% - 16px);
   min-width: 280px;
   width: auto;
 }
 
-#display-grid .component-card:last-child {
-  flex: 1 1 100%;
-  width: 100%;
+#display-grid .component-card:last-child,
+#display-grid .full-width-card {
+  flex: 1 1 100% !important;
+  width: 100% !important;
 }
-
 
 #display-grid .component-preview {
   justify-content: flex-start;
@@ -1366,7 +1328,6 @@ ms-table {
 #display-grid .component-card {
   min-height: auto;
 }
-
 
 #display-grid .component-preview ms-badge {
   margin-right: 12px;
@@ -1474,7 +1435,6 @@ ms-table {
   padding-bottom: 0px !important;
 }
 
-
 @media (max-width: 768px) {
   #display-grid .component-preview {
     justify-content: flex-start;
@@ -1524,4 +1484,70 @@ ms-table {
     flex: 1 1 100%;
     width: 100%;
   }
+}
+
+/* Profile Popover Styles */
+.profile-header {
+  min-width: 250px;
+  background-color: #f8fafc;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.profile-avatar {
+  width: 56px !important;
+  height: 56px !important;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  display: block;
+}
+
+.profile-role {
+  font-size: 0.9rem;
+  color: #64748b;
+  display: block;
+}
+
+.profile-menu {
+  list-style: none !important;
+  padding: 8px 0 !important;
+  margin: 0 !important;
+}
+
+.profile-menu li {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.profile-menu li a {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  color: #334155 !important;
+  text-decoration: none !important;
+  font-size: 1rem;
+  transition: background-color 0.2s;
+}
+
+.profile-menu li a:hover {
+  background-color: #f1f5f9;
+}
+
+.profile-footer {
+  padding: 16px 20px;
+  border-top: 1px solid #f1f5f9;
 }

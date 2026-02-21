@@ -33,6 +33,13 @@ import FieldSet from "./components/FieldSet.js";
 import Messages from "./components/Messages.js";
 import ProgressBar from "./components/ProgressBar.js";
 import Steps from "./components/Steps.js";
+import TextEditor from "./components/TextEditor.js";
+import Knob from "./components/Knob.js";
+import InputPassword from "./components/InputPassword.js";
+import SelectButton from "./components/SelectButton.js";
+import Image from "./components/Image.js";
+import Popover from "./components/Popover.js";
+import MeterGroup from "./components/MeterGroup.js";
 class ComponentsApp {
   constructor() {
     this.categories = {
@@ -48,6 +55,9 @@ class ComponentsApp {
         { name: "Calendar", component: Calendar },
         { name: "InputOTP", component: InputOTP },
         { name: "ControlNumber", component: ControlNumber },
+        { name: "Knob", component: Knob },
+        { name: "InputPassword", component: InputPassword },
+        { name: "TextEditor", component: TextEditor },
       ],
       navigation: [
         { name: "Menubar", component: Menubar },
@@ -56,11 +66,13 @@ class ComponentsApp {
         { name: "Tabs", component: Tabs },
         { name: "Sidebar", component: Sidebar },
         { name: "Steps", component: Steps },
+        { name: "Popover", component: Popover },
       ],
       paginator: [{ name: "Paginator", component: Paginator }],
       actions: [
         { name: "Buttons", component: Buttons },
         { name: "Chips", component: Chips },
+        { name: "SelectButton", component: SelectButton },
       ],
       display: [
         { name: "Card", component: Card },
@@ -69,6 +81,8 @@ class ComponentsApp {
         { name: "Timeline", component: Timeline },
         { name: "Accordion", component: Accordion },
         { name: "Carousel", component: Carousel },
+        { name: "Image", component: Image },
+        { name: "MeterGroup", component: MeterGroup },
       ],
       data: [{ name: "Table", component: Table }],
       feedback: [
