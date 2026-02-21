@@ -1,7 +1,7 @@
 class StepsComponent {
     static render() {
         const card = document.createElement("div");
-        card.className = "component-card";
+        card.className = "component-card full-width-card";
 
         card.innerHTML = `
               <div class="component-header">
