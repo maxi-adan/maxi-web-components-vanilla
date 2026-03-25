@@ -40,6 +40,8 @@ import SelectButton from "./components/SelectButton.js";
 import Image from "./components/Image.js";
 import Popover from "./components/Popover.js";
 import MeterGroup from "./components/MeterGroup.js";
+import Chart from "./components/Chart.js";
+import Icon from "./components/Icon.js";
 class ComponentsApp {
   constructor() {
     this.categories = {
@@ -97,6 +99,8 @@ class ComponentsApp {
         { name: "Spinner", component: Spinner },
         { name: "ProgressBar", component: ProgressBar },
       ],
+      chart: [{ name: "Chart", component: Chart }],
+      icon: [{ name: "Icon", component: Icon }],
     };
 
     this.init();
