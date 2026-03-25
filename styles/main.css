@@ -1551,3 +1551,165 @@ ms-table {
   padding: 16px 20px;
   border-top: 1px solid #f1f5f9;
 }
+
+/* ── Chart section ────────────────────────────────────────────────────────── */
+
+#chart .section-card::before {
+  background: linear-gradient(180deg, #10b981, #059669);
+}
+
+#chart-grid .component-card,
+#icon-grid .component-card {
+  grid-column: 1 / -1;
+}
+
+.chart-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.chart-section {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.chart-section-title {
+  margin: 0 0 4px;
+  color: #374151;
+  font-size: 15px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 8px;
+}
+
+.chart-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.chart-card {
+  background: #fafafa;
+  border-radius: 10px;
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chart-card--full {
+  grid-column: 1 / -1;
+}
+
+.chart-card-title {
+  margin: 0;
+  color: #374151;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.chart-card-desc {
+  margin: 0 0 10px;
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+@media (max-width: 768px) {
+  .chart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ── Icon section ─────────────────────────────────────────────────────────── */
+
+#icon .section-card::before {
+  background: linear-gradient(180deg, #6366f1, #4f46e5);
+}
+
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+}
+
+.icon-label {
+  margin: 0 0 12px;
+  color: #6b7280;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.icon-top-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 24px;
+  width: 100%;
+}
+
+.icon-row {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.icon-sizes-row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+
+.icon-size-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.icon-size-label {
+  font-size: 11px;
+  color: #9ca3af;
+}
+
+.icon-all-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.icon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 10px;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  min-width: 80px;
+  background-color: #fafafa;
+}
+
+.icon-name {
+  font-size: 11px;
+  color: #6b7280;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .icon-top-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}

@@ -66,12 +66,14 @@ vanilla/
 │   │   ├── Breadcrumb.js     # Navigation breadcrumb trail
 │   │   ├── Carousel.js       # Interactive carousel for displaying multiple items with navigation
 │   │   ├── CascadeMenu.js    # Hierarchical menu
+│   │   ├── Chart.js          # Interactive charts (bar, line, pie, radar, bubble, etc.)
 │   │   ├── Checkbox.js       # Checkboxes
 │   │   ├── Chips.js          # Removable tags/chips
 │   │   ├── ControlNumber.js  # Numeric control input
 │   │   ├── Dialog.js         # Modal dialogs
 │   │   ├── Dropdown.js       # Dropdowns/Selects
 │   │   ├── FieldSet.js       # Grouped form fields with collapsible legend
+│   │   ├── Icon.js           # Scalable icons with size and color customization
 │   │   ├── InputField.js     # Text inputs
 │   │   ├── InputOTP.js       # One-Time Password verification
 │   │   ├── InputNumber.js    # Number inputs
@@ -204,6 +206,57 @@ vanilla/
 | **Dialog**       | Modal dialogs                                                                         | `Dialog.js`       |
 | **Tooltip**      | Informative tooltips                                                                  | `Tooltip.js`      |
 | **Message**      | Contextual messages for displaying different types of feedback with multiple variants | `Messages.js`     |
+
+### 📈 Chart Components
+
+| Component | Description                                                                                              | File       |
+| --------- | -------------------------------------------------------------------------------------------------------- | ---------- |
+| **Chart** | Interactive charts: bar, line, pie, doughnut, radar, bubble, polar area, scatter, stacked, mixed & more | `Chart.js` |
+
+#### Chart Types
+
+| Type            | Description                                               |
+| --------------- | --------------------------------------------------------- |
+| `bar`           | Data distribution by category                            |
+| `line`          | Multiple datasets comparison over time                   |
+| `pie`           | Proportional distribution with custom colors             |
+| `doughnut`      | Circular chart with a hollow center                      |
+| `radar`         | Multivariate data across multiple axes                   |
+| `bubble`        | Three-dimensional data (x, y, radius)                    |
+| `polarArea`     | Equal-angle segments with value-proportional radii        |
+| `scatter`       | Correlation between two numeric variables                |
+| Stacked Bar     | Cumulative totals per category segment                   |
+| Stacked Line    | Filled area chart with stacked regions                   |
+| Multi Series    | Concentric rings for multi-year comparison               |
+| Mixed           | Combines bar and line datasets in a single chart         |
+
+#### Animation Presets
+
+| Preset              | Description                                                             |
+| ------------------- | ----------------------------------------------------------------------- |
+| Progressive Line    | Tension animates from 1 to 0 in an infinite loop                        |
+| Delay Animation     | Bars rise from zero with staggered sequential delay per position         |
+| Drop Animation      | Bars rise from zero with elastic easing (`easeInOutElastic`)            |
+| Loop Animation      | Bars animate from max value with sine easing                            |
+| Progressive Easing  | Points draw sequentially with `easeOutQuart` per index                  |
+
+### 🎨 Icon Components
+
+| Component | Description                                            | File      |
+| --------- | ------------------------------------------------------ | --------- |
+| **Icon**  | Scalable SVG icons with configurable size and color    | `Icon.js` |
+
+#### Icon Properties
+
+| Property | Type     | Description                          |
+| -------- | -------- | ------------------------------------ |
+| `name`   | `string` | Icon identifier (e.g. `"home"`)      |
+| `size`   | `number` | Icon size in pixels (default `24`)   |
+| `color`  | `string` | CSS color value (e.g. `"#3B82F6"`)   |
+
+#### Available Icons
+
+`home`, `search`, `settings`, `user`, `arrow-left`, `arrow-right`, `alert-circle`, `alert-triangle`, `bell`, `calendar`, `check`, `check-circle`, `chevron-down`, `chevron-left`, `chevron-right`, `chevron-up`, `copy`, `download`, `edit`, `eye`, `eye-off`, `filter`, `info`, `lock`, `mail`, `menu`, `minus`, `plus`, `refresh`, `trash`, `unlock`, `upload`, `x`
 
 ---
 
